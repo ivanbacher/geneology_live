@@ -593,33 +593,33 @@ System.config({
       "buffer",
       "process"
     ],
-    "github:jspm/nodelibs-buffer@0.1.1.js": [
-      "github:jspm/nodelibs-buffer@0.1.1/index"
-    ],
     "github:jspm/nodelibs-process@0.1.2.js": [
       "github:jspm/nodelibs-process@0.1.2/index"
     ],
-    "github:jspm/nodelibs-buffer@0.1.1/index.js": [
-      "buffer"
+    "github:jspm/nodelibs-buffer@0.1.1.js": [
+      "github:jspm/nodelibs-buffer@0.1.1/index"
     ],
     "github:jspm/nodelibs-process@0.1.2/index.js": [
       "process"
     ],
-    "npm:process@0.11.10.js": [
-      "npm:process@0.11.10/browser.js"
+    "github:jspm/nodelibs-buffer@0.1.1/index.js": [
+      "buffer"
     ],
     "npm:buffer@5.0.8.js": [
       "npm:buffer@5.0.8/index.js"
+    ],
+    "npm:process@0.11.10.js": [
+      "npm:process@0.11.10/browser.js"
     ],
     "npm:buffer@5.0.8/index.js": [
       "base64-js",
       "ieee754"
     ],
-    "npm:ieee754@1.1.8.js": [
-      "npm:ieee754@1.1.8/index.js"
-    ],
     "npm:base64-js@1.2.1.js": [
       "npm:base64-js@1.2.1/index.js"
+    ],
+    "npm:ieee754@1.1.8.js": [
+      "npm:ieee754@1.1.8/index.js"
     ],
     "npm:aurelia-logging-console@1.0.0.js": [
       "npm:aurelia-logging-console@1.0.0/aurelia-logging-console"
@@ -795,27 +795,10 @@ System.config({
       "./analyze-view-factory",
       "./aurelia-hide-style"
     ],
-    "npm:aurelia-templating-resources@1.5.4/signal-binding-behavior.js": [
-      "./binding-signaler"
-    ],
-    "npm:aurelia-templating-resources@1.5.4/repeat-strategy-locator.js": [
-      "./null-repeat-strategy",
-      "./array-repeat-strategy",
-      "./map-repeat-strategy",
-      "./set-repeat-strategy",
-      "./number-repeat-strategy"
-    ],
-    "npm:aurelia-templating-resources@1.5.4/map-repeat-strategy.js": [
-      "./repeat-utilities"
-    ],
-    "npm:aurelia-templating-resources@1.5.4/set-repeat-strategy.js": [
-      "./repeat-utilities"
-    ],
-    "npm:aurelia-templating-resources@1.5.4/number-repeat-strategy.js": [
-      "./repeat-utilities"
-    ],
-    "npm:aurelia-templating-resources@1.5.4/aurelia-hide-style.js": [
-      "aurelia-pal"
+    "npm:aurelia-templating-resources@1.5.4/if.js": [
+      "aurelia-templating",
+      "aurelia-dependency-injection",
+      "./if-core"
     ],
     "npm:aurelia-templating-resources@1.5.4/compose.js": [
       "aurelia-dependency-injection",
@@ -823,11 +806,6 @@ System.config({
       "aurelia-task-queue",
       "aurelia-templating",
       "aurelia-pal"
-    ],
-    "npm:aurelia-templating-resources@1.5.4/if.js": [
-      "aurelia-templating",
-      "aurelia-dependency-injection",
-      "./if-core"
     ],
     "npm:aurelia-templating-resources@1.5.4/else.js": [
       "aurelia-templating",
@@ -874,6 +852,28 @@ System.config({
       "aurelia-binding",
       "aurelia-dependency-injection",
       "aurelia-task-queue",
+      "aurelia-pal"
+    ],
+    "npm:aurelia-templating-resources@1.5.4/signal-binding-behavior.js": [
+      "./binding-signaler"
+    ],
+    "npm:aurelia-templating-resources@1.5.4/repeat-strategy-locator.js": [
+      "./null-repeat-strategy",
+      "./array-repeat-strategy",
+      "./map-repeat-strategy",
+      "./set-repeat-strategy",
+      "./number-repeat-strategy"
+    ],
+    "npm:aurelia-templating-resources@1.5.4/map-repeat-strategy.js": [
+      "./repeat-utilities"
+    ],
+    "npm:aurelia-templating-resources@1.5.4/set-repeat-strategy.js": [
+      "./repeat-utilities"
+    ],
+    "npm:aurelia-templating-resources@1.5.4/number-repeat-strategy.js": [
+      "./repeat-utilities"
+    ],
+    "npm:aurelia-templating-resources@1.5.4/aurelia-hide-style.js": [
       "aurelia-pal"
     ],
     "npm:aurelia-templating-resources@1.5.4/css-resource.js": [
@@ -970,7 +970,7 @@ System.config({
     ]
   },
   bundles: {
-    "app-build-d19419da27.js": [
+    "app-build-270c606cb6.js": [
       "app.html!github:systemjs/plugin-text@0.0.8.js",
       "app.js",
       "data_manager.js",
