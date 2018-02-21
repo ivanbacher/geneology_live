@@ -1,0 +1,21 @@
+.spacer_btm_5 {
+	margin-bottom: 5px;
+}
+
+.spacer_btm_10 {
+	margin-bottom: 10px;
+}
+
+.spacer_btm_20 {
+	margin-bottom: 20px;
+}
+
+.spacer_btm_30 {
+	margin-bottom: 30px;
+}
+
+svg {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
