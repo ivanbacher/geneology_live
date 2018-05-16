@@ -542,11 +542,11 @@ System.config({
     "github:jspm/nodelibs-process@0.1.2/index.js": [
       "process"
     ],
-    "npm:buffer@5.1.0.js": [
-      "npm:buffer@5.1.0/index.js"
-    ],
     "npm:process@0.11.10.js": [
       "npm:process@0.11.10/browser.js"
+    ],
+    "npm:buffer@5.1.0.js": [
+      "npm:buffer@5.1.0/index.js"
     ],
     "npm:buffer@5.1.0/index.js": [
       "base64-js",
@@ -804,15 +804,15 @@ System.config({
     "npm:aurelia-templating-resources@1.1.1/aurelia-hide-style.js": [
       "aurelia-pal"
     ],
+    "npm:aurelia-templating-resources@1.1.1/if.js": [
+      "aurelia-templating",
+      "aurelia-dependency-injection"
+    ],
     "npm:aurelia-templating-resources@1.1.1/compose.js": [
       "aurelia-dependency-injection",
       "aurelia-task-queue",
       "aurelia-templating",
       "aurelia-pal"
-    ],
-    "npm:aurelia-templating-resources@1.1.1/if.js": [
-      "aurelia-templating",
-      "aurelia-dependency-injection"
     ],
     "npm:aurelia-templating-resources@1.1.1/with.js": [
       "aurelia-dependency-injection",
@@ -831,14 +831,14 @@ System.config({
       "aurelia-pal",
       "./aurelia-hide-style"
     ],
+    "npm:aurelia-templating-resources@1.1.1/replaceable.js": [
+      "aurelia-dependency-injection",
+      "aurelia-templating"
+    ],
     "npm:aurelia-templating-resources@1.1.1/sanitize-html.js": [
       "aurelia-binding",
       "aurelia-dependency-injection",
       "./html-sanitizer"
-    ],
-    "npm:aurelia-templating-resources@1.1.1/replaceable.js": [
-      "aurelia-dependency-injection",
-      "aurelia-templating"
     ],
     "npm:aurelia-templating-resources@1.1.1/focus.js": [
       "aurelia-templating",
@@ -980,7 +980,7 @@ System.config({
       "npm:tether@1.4.4.js",
       "npm:tether@1.4.4/dist/js/tether.js"
     ],
-    "app-build-9dd6ee21d5.js": [
+    "app-build-2ea464c680.js": [
       "app.html!github:systemjs/plugin-text@0.0.8.js",
       "app.js",
       "color_service.js",
