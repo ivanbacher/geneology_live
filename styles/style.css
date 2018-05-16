@@ -1,21 +1,43 @@
-.spacer_btm_5 {
+
+body {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+
+.spacer-btm-5 {
 	margin-bottom: 5px;
 }
 
-.spacer_btm_10 {
+.spacer-btm-10 {
 	margin-bottom: 10px;
 }
 
-.spacer_btm_20 {
+.spacer-btm-20 {
 	margin-bottom: 20px;
 }
 
-.spacer_btm_30 {
+.spacer-btm-30 {
 	margin-bottom: 30px;
 }
 
-svg {
-	margin-right: auto;
-	margin-left: auto;
-	display: block;
+.spacer-top-5 {
+	margin-top: 5px;
+}
+
+.spacer-top-10 {
+	margin-top: 10px;
+}
+
+.spacer-top-20 {
+	margin-top: 20px;
+}
+
+.spacer-top-30 {
+	margin-top: 30px;
+}
+
+.spacer-top-50 {
+	padding-top: 50px;
 }
