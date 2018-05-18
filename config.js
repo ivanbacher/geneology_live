@@ -529,11 +529,11 @@ System.config({
       "buffer",
       "process"
     ],
-    "github:jspm/nodelibs-buffer@0.1.1.js": [
-      "github:jspm/nodelibs-buffer@0.1.1/index"
-    ],
     "github:jspm/nodelibs-process@0.1.2.js": [
       "github:jspm/nodelibs-process@0.1.2/index"
+    ],
+    "github:jspm/nodelibs-buffer@0.1.1.js": [
+      "github:jspm/nodelibs-buffer@0.1.1/index"
     ],
     "github:jspm/nodelibs-buffer@0.1.1/index.js": [
       "buffer"
@@ -541,11 +541,11 @@ System.config({
     "github:jspm/nodelibs-process@0.1.2/index.js": [
       "process"
     ],
-    "npm:buffer@5.1.0.js": [
-      "npm:buffer@5.1.0/index.js"
-    ],
     "npm:process@0.11.10.js": [
       "npm:process@0.11.10/browser.js"
+    ],
+    "npm:buffer@5.1.0.js": [
+      "npm:buffer@5.1.0/index.js"
     ],
     "npm:buffer@5.1.0/index.js": [
       "base64-js",
@@ -556,6 +556,80 @@ System.config({
     ],
     "npm:ieee754@1.1.11.js": [
       "npm:ieee754@1.1.11/index.js"
+    ],
+    "app.js": [
+      "./data_service.js",
+      "../styles/bootstrap-overrides.css!",
+      "../styles/fullpage-overrides.css!",
+      "aurelia-framework",
+      "aurelia-event-aggregator"
+    ],
+    "components/node-info.js": [
+      "../data_service.js",
+      "../color_service.js",
+      "d3",
+      "aurelia-framework",
+      "aurelia-event-aggregator"
+    ],
+    "data_service.js": [
+      "../data/01_people_cant.csv!text",
+      "../data/02_marriges_cant.csv!text",
+      "../data/03_children_cant.csv!text",
+      "../data/04_cant.csv!text",
+      "../data/01_people_gammon.csv!text",
+      "../data/02_marriges_gammon.csv!text",
+      "../data/03_children_gammon.csv!text",
+      "../data/04_gammon.csv!text",
+      "d3",
+      "./surname_service.js"
+    ],
+    "main.js": [
+      "jquery",
+      "bootstrap",
+      "bootstrap/dist/css/bootstrap.min.css!",
+      "fullpage",
+      "fullpage/dist/jquery.fullpage.min.css!"
+    ],
+    "sections/S02.js": [
+      "../data_service.js",
+      "../color_service.js",
+      "d3",
+      "aurelia-framework",
+      "aurelia-event-aggregator"
+    ],
+    "sections/S03.js": [
+      "../data_service.js",
+      "../color_service.js",
+      "d3",
+      "aurelia-framework",
+      "aurelia-event-aggregator"
+    ],
+    "sections/S05.js": [
+      "../data_service.js",
+      "../color_service.js",
+      "d3"
+    ],
+    "sections/S07.js": [
+      "../data_service.js",
+      "../color_service.js",
+      "d3",
+      "../surname_service.js"
+    ],
+    "sections/S09.js": [
+      "../data_service.js",
+      "../color_service.js",
+      "d3",
+      "../surname_service.js"
+    ],
+    "sections/S11.js": [
+      "../data_service.js",
+      "../color_service.js",
+      "d3",
+      "../surname_service.js"
+    ],
+    "sections/S13.js": [
+      "d3",
+      "jquery"
     ],
     "npm:aurelia-logging-console@1.0.0.js": [
       "npm:aurelia-logging-console@1.0.0/aurelia-logging-console"
@@ -648,13 +722,6 @@ System.config({
       "aurelia-path",
       "aurelia-metadata"
     ],
-    "npm:aurelia-templating-router@1.0.0/route-href.js": [
-      "aurelia-templating",
-      "aurelia-dependency-injection",
-      "aurelia-router",
-      "aurelia-pal",
-      "aurelia-logging"
-    ],
     "npm:aurelia-templating@1.1.1.js": [
       "npm:aurelia-templating@1.1.1/aurelia-templating"
     ],
@@ -682,6 +749,13 @@ System.config({
     ],
     "npm:aurelia-task-queue@1.1.0/aurelia-task-queue.js": [
       "aurelia-pal"
+    ],
+    "npm:aurelia-templating-router@1.0.0/route-href.js": [
+      "aurelia-templating",
+      "aurelia-dependency-injection",
+      "aurelia-router",
+      "aurelia-pal",
+      "aurelia-logging"
     ],
     "npm:aurelia-templating-router@1.0.0/router-view.js": [
       "aurelia-dependency-injection",
@@ -747,12 +821,6 @@ System.config({
     "npm:aurelia-templating-resources@1.1.1/aurelia-hide-style.js": [
       "aurelia-pal"
     ],
-    "npm:aurelia-templating-resources@1.1.1/compose.js": [
-      "aurelia-dependency-injection",
-      "aurelia-task-queue",
-      "aurelia-templating",
-      "aurelia-pal"
-    ],
     "npm:aurelia-templating-resources@1.1.1/if.js": [
       "aurelia-templating",
       "aurelia-dependency-injection"
@@ -773,6 +841,12 @@ System.config({
       "aurelia-templating",
       "aurelia-pal",
       "./aurelia-hide-style"
+    ],
+    "npm:aurelia-templating-resources@1.1.1/compose.js": [
+      "aurelia-dependency-injection",
+      "aurelia-task-queue",
+      "aurelia-templating",
+      "aurelia-pal"
     ],
     "npm:aurelia-templating-resources@1.1.1/sanitize-html.js": [
       "aurelia-binding",
@@ -890,80 +964,6 @@ System.config({
       "aurelia-path",
       "aurelia-pal",
       "aurelia-logging"
-    ],
-    "app.js": [
-      "./data_service.js",
-      "../styles/bootstrap-overrides.css!",
-      "../styles/fullpage-overrides.css!",
-      "aurelia-framework",
-      "aurelia-event-aggregator"
-    ],
-    "components/node-info.js": [
-      "../data_service.js",
-      "../color_service.js",
-      "d3",
-      "aurelia-framework",
-      "aurelia-event-aggregator"
-    ],
-    "data_service.js": [
-      "../data/01_people_cant.csv!text",
-      "../data/02_marriges_cant.csv!text",
-      "../data/03_children_cant.csv!text",
-      "../data/04_cant.csv!text",
-      "../data/01_people_gammon.csv!text",
-      "../data/02_marriges_gammon.csv!text",
-      "../data/03_children_gammon.csv!text",
-      "../data/04_gammon.csv!text",
-      "d3",
-      "./surname_service.js"
-    ],
-    "main.js": [
-      "jquery",
-      "bootstrap",
-      "bootstrap/dist/css/bootstrap.min.css!",
-      "fullpage",
-      "fullpage/dist/jquery.fullpage.min.css!"
-    ],
-    "sections/S02.js": [
-      "../data_service.js",
-      "../color_service.js",
-      "d3",
-      "aurelia-framework",
-      "aurelia-event-aggregator"
-    ],
-    "sections/S03.js": [
-      "../data_service.js",
-      "../color_service.js",
-      "d3",
-      "aurelia-framework",
-      "aurelia-event-aggregator"
-    ],
-    "sections/S05.js": [
-      "../data_service.js",
-      "../color_service.js",
-      "d3"
-    ],
-    "sections/S07.js": [
-      "../data_service.js",
-      "../color_service.js",
-      "d3",
-      "../surname_service.js"
-    ],
-    "sections/S09.js": [
-      "../data_service.js",
-      "../color_service.js",
-      "d3",
-      "../surname_service.js"
-    ],
-    "sections/S11.js": [
-      "../data_service.js",
-      "../color_service.js",
-      "d3",
-      "../surname_service.js"
-    ],
-    "sections/S13.js": [
-      "d3",
-      "jquery"
     ]
   },
   bundles: {
@@ -996,6 +996,44 @@ System.config({
       "npm:process@0.11.10/browser.js",
       "npm:tether@1.4.4.js",
       "npm:tether@1.4.4/dist/js/tether.js"
+    ],
+    "app-build-5cbd0d8560.js": [
+      "app.html!github:systemjs/plugin-text@0.0.8.js",
+      "app.js",
+      "color_service.js",
+      "components/node-info.html!github:systemjs/plugin-text@0.0.8.js",
+      "components/node-info.js",
+      "data_service.js",
+      "main.js",
+      "sections/S01.html!github:systemjs/plugin-text@0.0.8.js",
+      "sections/S02.html!github:systemjs/plugin-text@0.0.8.js",
+      "sections/S02.js",
+      "sections/S03.html!github:systemjs/plugin-text@0.0.8.js",
+      "sections/S03.js",
+      "sections/S04.html!github:systemjs/plugin-text@0.0.8.js",
+      "sections/S05.html!github:systemjs/plugin-text@0.0.8.js",
+      "sections/S05.js",
+      "sections/S06.html!github:systemjs/plugin-text@0.0.8.js",
+      "sections/S07.html!github:systemjs/plugin-text@0.0.8.js",
+      "sections/S07.js",
+      "sections/S07S01.html!github:systemjs/plugin-text@0.0.8.js",
+      "sections/S07S02.html!github:systemjs/plugin-text@0.0.8.js",
+      "sections/S08.html!github:systemjs/plugin-text@0.0.8.js",
+      "sections/S09.html!github:systemjs/plugin-text@0.0.8.js",
+      "sections/S09.js",
+      "sections/S09S01.html!github:systemjs/plugin-text@0.0.8.js",
+      "sections/S09S02.html!github:systemjs/plugin-text@0.0.8.js",
+      "sections/S10.html!github:systemjs/plugin-text@0.0.8.js",
+      "sections/S11.html!github:systemjs/plugin-text@0.0.8.js",
+      "sections/S11.js",
+      "sections/S11S01.html!github:systemjs/plugin-text@0.0.8.js",
+      "sections/S11S02.html!github:systemjs/plugin-text@0.0.8.js",
+      "sections/S12.html!github:systemjs/plugin-text@0.0.8.js",
+      "sections/S13.html!github:systemjs/plugin-text@0.0.8.js",
+      "sections/S13.js",
+      "sections/S13S01.html!github:systemjs/plugin-text@0.0.8.js",
+      "sections/S13S02.html!github:systemjs/plugin-text@0.0.8.js",
+      "surname_service.js"
     ],
     "aurelia-906518ce68.js": [
       "npm:aurelia-animator-css@1.0.1.js",
@@ -1081,44 +1119,6 @@ System.config({
       "npm:aurelia-templating-router@1.0.0/router-view.js",
       "npm:aurelia-templating@1.1.1.js",
       "npm:aurelia-templating@1.1.1/aurelia-templating.js"
-    ],
-    "app-build-599678b108.js": [
-      "app.html!github:systemjs/plugin-text@0.0.8.js",
-      "app.js",
-      "color_service.js",
-      "components/node-info.html!github:systemjs/plugin-text@0.0.8.js",
-      "components/node-info.js",
-      "data_service.js",
-      "main.js",
-      "sections/S01.html!github:systemjs/plugin-text@0.0.8.js",
-      "sections/S02.html!github:systemjs/plugin-text@0.0.8.js",
-      "sections/S02.js",
-      "sections/S03.html!github:systemjs/plugin-text@0.0.8.js",
-      "sections/S03.js",
-      "sections/S04.html!github:systemjs/plugin-text@0.0.8.js",
-      "sections/S05.html!github:systemjs/plugin-text@0.0.8.js",
-      "sections/S05.js",
-      "sections/S06.html!github:systemjs/plugin-text@0.0.8.js",
-      "sections/S07.html!github:systemjs/plugin-text@0.0.8.js",
-      "sections/S07.js",
-      "sections/S07S01.html!github:systemjs/plugin-text@0.0.8.js",
-      "sections/S07S02.html!github:systemjs/plugin-text@0.0.8.js",
-      "sections/S08.html!github:systemjs/plugin-text@0.0.8.js",
-      "sections/S09.html!github:systemjs/plugin-text@0.0.8.js",
-      "sections/S09.js",
-      "sections/S09S01.html!github:systemjs/plugin-text@0.0.8.js",
-      "sections/S09S02.html!github:systemjs/plugin-text@0.0.8.js",
-      "sections/S10.html!github:systemjs/plugin-text@0.0.8.js",
-      "sections/S11.html!github:systemjs/plugin-text@0.0.8.js",
-      "sections/S11.js",
-      "sections/S11S01.html!github:systemjs/plugin-text@0.0.8.js",
-      "sections/S11S02.html!github:systemjs/plugin-text@0.0.8.js",
-      "sections/S12.html!github:systemjs/plugin-text@0.0.8.js",
-      "sections/S13.html!github:systemjs/plugin-text@0.0.8.js",
-      "sections/S13.js",
-      "sections/S13S01.html!github:systemjs/plugin-text@0.0.8.js",
-      "sections/S13S02.html!github:systemjs/plugin-text@0.0.8.js",
-      "surname_service.js"
     ]
   }
 });
